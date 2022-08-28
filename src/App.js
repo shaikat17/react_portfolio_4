@@ -1,6 +1,6 @@
 import "./App.css"
 import { Pages } from "./components/pages/Pages"
-import { useEffect } from "react"
+import { Fragment, useEffect } from "react"
 
 //npm install --save aos@next
 //aos
@@ -14,9 +14,9 @@ function App() {
     AOS.refresh()
   }, [])
   return (
-    <>
+    <Fragment>
       <Pages />
-    </>
+    </Fragment>
   )
 }
 

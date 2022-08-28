@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { project } from "../data/dummydata"
 import CountUp from "react-countup"
 
@@ -6,7 +6,7 @@ import CountUp from "react-countup"
 
 export const Counter = () => {
   return (
-    <>
+    <Fragment>
       <div className='hero counter'>
         <div className='container grid3 grid4'>
           {project.map((item) => (
@@ -20,6 +20,6 @@ export const Counter = () => {
           ))}
         </div>
       </div>
-    </>
+    </Fragment>
   )
 }

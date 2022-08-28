@@ -1,9 +1,9 @@
-import React from "react"
+import React, { Fragment } from "react"
 import Slider from "react-slick"
 import { testimonials } from "../data/dummydata"
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const Testimonials = () => {
   const settings = {
@@ -14,7 +14,7 @@ export const Testimonials = () => {
     slidesToScroll: 1,
   }
   return (
-    <>
+    <Fragment>
       <section className='testimonials hero'>
         <div className='container'>
           <Slider {...settings}>
@@ -34,6 +34,6 @@ export const Testimonials = () => {
           </Slider>
         </div>
       </section>
-    </>
+    </Fragment>
   )
 }

@@ -1,10 +1,10 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { Heading } from "../common/Heading"
 import { contact } from "../data/dummydata"
 
 export const Contact = () => {
   return (
-    <>
+    <Fragment>
       <div className='contact'>
         <div className='container'>
           <Heading title='Keep In Touch' />
@@ -32,6 +32,6 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </>
+    </Fragment>
   )
 }

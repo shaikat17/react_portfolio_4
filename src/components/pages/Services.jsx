@@ -1,10 +1,10 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { Heading } from "../common/Heading"
 import { services } from "../data/dummydata"
 
 export const Services = () => {
   return (
-    <>
+    <Fragment>
       <section className='services'>
         <div className='container'>
           <Heading title='Services' />
@@ -19,6 +19,6 @@ export const Services = () => {
           </div>
         </div>
       </section>
-    </>
+    </Fragment>
   )
 }

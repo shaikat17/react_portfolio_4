@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { Fragment, useState } from "react"
 import { Heading } from "../common/Heading"
 import { portfolio } from "../data/dummydata"
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
@@ -19,7 +19,7 @@ export const Portfolio = () => {
   }
 
   return (
-    <>
+    <Fragment>
       <article>
         <div className='container'>
           <Heading title='Portfolio' />
@@ -46,6 +46,6 @@ export const Portfolio = () => {
           </div>
         </div>
       </article>
-    </>
+    </Fragment>
   )
 }
